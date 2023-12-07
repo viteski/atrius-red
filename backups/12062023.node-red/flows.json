@@ -1,0 +1,2039 @@
+[
+    {
+        "id": "b9580a15940f3cbd",
+        "type": "tab",
+        "label": "Atrius Solar Edge",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "532d30b88b501257",
+        "type": "tab",
+        "label": "Atrius Rest API Example",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "ae3eda63ec61e149",
+        "type": "tab",
+        "label": "Emporia Energy",
+        "disabled": false,
+        "info": "\r\nhttps://web.emporiaenergy.com/#/home\r\n\r\nusername: marka4jr@gmail.com\r\n\r\npassword: Distech2001",
+        "env": []
+    },
+    {
+        "id": "37ad74c03ea941d8",
+        "type": "tls-config",
+        "name": "",
+        "cert": "",
+        "key": "",
+        "ca": "",
+        "certname": "",
+        "keyname": "",
+        "caname": "",
+        "servername": "",
+        "verifyservercert": false,
+        "alpnprotocol": ""
+    },
+    {
+        "id": "94aa64d0938a22eb",
+        "type": "ui_tab",
+        "name": "Solar Edge",
+        "icon": "dashboard",
+        "order": 1,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "d4666cc544ebf19e",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-custom",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "customTheme": {
+                "name": "Atrius",
+                "default": "#4B7930",
+                "baseColor": "#126b96",
+                "baseFont": "Arial,Arial,Helvetica,sans-serif",
+                "reset": false
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#4B7930",
+                    "value": "#126b96",
+                    "edited": true
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#126b96",
+                    "edited": true
+                },
+                "page-backgroundColor": {
+                    "value": "#faf9f9",
+                    "edited": true
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#126b96",
+                    "edited": true
+                },
+                "group-textColor": {
+                    "value": "#f5f5f5",
+                    "edited": true
+                },
+                "group-borderColor": {
+                    "value": "#c2c1c1",
+                    "edited": true
+                },
+                "group-backgroundColor": {
+                    "value": "#126b96",
+                    "edited": true
+                },
+                "widget-textColor": {
+                    "value": "#585656",
+                    "edited": true
+                },
+                "widget-backgroundColor": {
+                    "value": "#8bc53f",
+                    "edited": true
+                },
+                "widget-borderColor": {
+                    "value": "#f0f5f7",
+                    "edited": true
+                },
+                "base-font": {
+                    "value": "Arial,Arial,Helvetica,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "Atrius Integrations",
+            "hideToolbar": "false",
+            "allowSwipe": "true",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 64,
+                "sy": 64,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 20,
+                "py": 20
+            }
+        }
+    },
+    {
+        "id": "fdd5143c3d410524",
+        "type": "ui_group",
+        "name": "Configuration",
+        "tab": "94aa64d0938a22eb",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": true,
+        "className": ""
+    },
+    {
+        "id": "93620c743155a988",
+        "type": "ui_tab",
+        "name": "SMA",
+        "icon": "dashboard",
+        "order": 2,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "176ddee9623af23a",
+        "type": "ui_group",
+        "name": "Configuration",
+        "tab": "93620c743155a988",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "99ec12b637565ae2",
+        "type": "ui_spacer",
+        "z": "b9580a15940f3cbd",
+        "name": "spacer",
+        "group": "176ddee9623af23a",
+        "order": 1,
+        "width": "6",
+        "height": "2"
+    },
+    {
+        "id": "1c1246dd42c9fceb",
+        "type": "ui_tab",
+        "name": "Geo Tab",
+        "icon": "dashboard",
+        "order": 3,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "45847beabe32c23f",
+        "type": "ui_group",
+        "name": "Configuration",
+        "tab": "1c1246dd42c9fceb",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "24a01fbedf8c38ff",
+        "type": "ui_spacer",
+        "z": "b9580a15940f3cbd",
+        "name": "spacer",
+        "group": "45847beabe32c23f",
+        "order": 1,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "cf474380522c1710",
+        "type": "ui_link",
+        "name": "Atrius Help",
+        "link": "https://intercom.help/atrius/en/",
+        "icon": "open_in_browser",
+        "target": "newtab",
+        "order": 5
+    },
+    {
+        "id": "240f703fdab7e20a",
+        "type": "mui_base",
+        "theme": {
+            "name": "theme-light",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "m-base-color": {
+                    "default": "#0094CE",
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "m-page-titlebar-backgroundColor": {
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "m-page-backgroundColor": {
+                    "value": "#fafafa",
+                    "edited": false
+                },
+                "m-page-sidebar-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "m-group-textColor": {
+                    "value": "#1bbfff",
+                    "edited": false
+                },
+                "m-group-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "m-group-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "m-widget-textColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "m-widget-backgroundColor": {
+                    "value": "#0094ce",
+                    "edited": false
+                },
+                "m-widget-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "7d527df484dee497",
+        "type": "ui_group",
+        "name": "Connection List",
+        "tab": "94aa64d0938a22eb",
+        "order": 2,
+        "disp": true,
+        "width": "6",
+        "collapse": true,
+        "className": ""
+    },
+    {
+        "id": "98b1948515f9ef73",
+        "type": "ui_tab",
+        "name": "Watt Time",
+        "icon": "dashboard",
+        "order": 4,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "bf1abb2de2155ae5",
+        "type": "ui_group",
+        "name": "Configuration",
+        "tab": "98b1948515f9ef73",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "85e4475ce49d29f9",
+        "type": "ui_spacer",
+        "z": "b9580a15940f3cbd",
+        "name": "spacer",
+        "group": "bf1abb2de2155ae5",
+        "order": 1,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "9184d826bdcaa24a",
+        "type": "ui_group",
+        "name": "Atrius Auth and Logs",
+        "tab": "94aa64d0938a22eb",
+        "order": 3,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "d27965d89d217317",
+        "type": "function",
+        "z": "b9580a15940f3cbd",
+        "name": "Add Connection",
+        "func": "let  projectPath = flow.get('project_path');\nlet  intPath = flow.get('int_path');\n\nfunction addConnectionStorage (siteId) {\n    fs.mkdir(`${projectPath}/${siteId}/energy`, {recursive: true}, (err) => {\n        if (err) msg.payload.error = err.message;\n        fs.mkdir(`${projectPath}/${siteId}/power`, (err) => {\n            if (err) msg.payload.error = err.message;\n        })\n    });\n}\n\ntry {\n    if (!fs.existsSync(projectPath)) {\n        fs.mkdir(projectPath, (err) => {\n            if (err) {\n                msg.payload.error = err.message;\n            }\n        });\n    }\n    if (!fs.existsSync(intPath)) {\n        const buff = new Uint8Array(\n            Buffer.from(JSON.stringify(\n                [msg.payload])\n            ));\n        fs.writeFile(intPath, buff, (err) => {\n            if (err) {\n                msg.payload.error = err.message;\n            }\n            flow.set('integrations', [msg.payload]);\n            addConnectionStorage(msg.payload['solaredge_site']);\n            node.done();\n        });\n    } else {\n        fs.readFile(intPath, (err, data) => {\n            if (err) {\n                msg.payload.error = err.message;\n                throw err;\n            }\n            let integrations = JSON.parse(data);\n            integrations.push(msg.payload);\n            addConnectionStorage(msg.payload['solaredge_site']);\n            const buff = new Uint8Array(\n                Buffer.from(JSON.stringify(integrations)\n                ));\n            fs.writeFile(intPath, buff, (err) => {\n                if (err) {\n                    msg.payload.error = err.message;\n                }\n                flow.set('integrations', integrations);\n                node.done();\n            });\n        });\n    } \n} catch (error) {\n    msg.payload.error = error.message;\n};\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [
+            {
+                "var": "fs",
+                "module": "fs"
+            },
+            {
+                "var": "path",
+                "module": "path"
+            }
+        ],
+        "x": 480,
+        "y": 120,
+        "wires": [
+            [
+                "8d26387fc4043c3e"
+            ]
+        ]
+    },
+    {
+        "id": "8d26387fc4043c3e",
+        "type": "debug",
+        "z": "b9580a15940f3cbd",
+        "name": "debug connection add op",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 830,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "ba228cea3125f97e",
+        "type": "oauth2",
+        "z": "b9580a15940f3cbd",
+        "name": "",
+        "container": "oauth2Response",
+        "grant_type": "set_by_credentials",
+        "access_token_url": "",
+        "authorization_endpoint": "",
+        "redirect_uri": "/oauth2/redirect_uri",
+        "open_authentication": "",
+        "username": "",
+        "password": "",
+        "client_id": "",
+        "client_secret": "",
+        "scope": "",
+        "resource": "",
+        "proxy": "",
+        "senderr": false,
+        "client_credentials_in_body": true,
+        "rejectUnauthorized": true,
+        "headers": {},
+        "x": 550,
+        "y": 320,
+        "wires": [
+            [
+                "726fb0887a3f5835"
+            ]
+        ]
+    },
+    {
+        "id": "c668f9e6de04e3ab",
+        "type": "inject",
+        "z": "b9580a15940f3cbd",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "35000",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "0.25",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 110,
+        "y": 320,
+        "wires": [
+            [
+                "0dfd1facbdc2544f"
+            ]
+        ]
+    },
+    {
+        "id": "63aa5490f50178a9",
+        "type": "debug",
+        "z": "b9580a15940f3cbd",
+        "name": "debug auth token fetch",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 840,
+        "y": 380,
+        "wires": []
+    },
+    {
+        "id": "726fb0887a3f5835",
+        "type": "function",
+        "z": "b9580a15940f3cbd",
+        "name": "Parse Tokens",
+        "func": "let tokens = flow.get('tokens')\nlet isDup = false;\n\ntokens.forEach((x) => {\n    if (x.org === msg.org) isDup = true;\n});\nif (!isDup) {\n    tokens.push({\n        'org': msg.org,\n        'token': msg.oauth2Response.access_token\n    });\n}\nflow.set('tokens', tokens)\nmsg.payload = flow.get('tokens') \nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 720,
+        "y": 320,
+        "wires": [
+            [
+                "63aa5490f50178a9",
+                "214885f8463bb034"
+            ]
+        ]
+    },
+    {
+        "id": "b9d726b3b081810c",
+        "type": "comment",
+        "z": "b9580a15940f3cbd",
+        "name": "Integration Configuration",
+        "info": "",
+        "x": 130,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "4c14f10634a316c8",
+        "type": "ui_form",
+        "z": "b9580a15940f3cbd",
+        "name": "",
+        "label": "Add New Connection",
+        "group": "fdd5143c3d410524",
+        "order": 1,
+        "width": "0",
+        "height": "0",
+        "options": [
+            {
+                "label": "Atrius Organization",
+                "value": "atrius_org",
+                "type": "text",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "Atrius Gateway ID",
+                "value": "atrius_gateway",
+                "type": "number",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "Atrius Client ID",
+                "value": "atrius_client",
+                "type": "text",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "Atrius Secret ID",
+                "value": "atrius_secret",
+                "type": "password",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "Solar Edge Site ID",
+                "value": "solaredge_site",
+                "type": "number",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "Solar Edge Api Key",
+                "value": "solaredge_key",
+                "type": "password",
+                "required": true,
+                "rows": null
+            }
+        ],
+        "formValue": {
+            "atrius_org": "",
+            "atrius_gateway": "",
+            "atrius_client": "",
+            "atrius_secret": "",
+            "solaredge_site": "",
+            "solaredge_key": ""
+        },
+        "payload": "",
+        "submit": "add",
+        "cancel": "cancel",
+        "topic": "topic",
+        "topicType": "msg",
+        "splitLayout": "",
+        "className": "",
+        "x": 120,
+        "y": 120,
+        "wires": [
+            [
+                "d27965d89d217317"
+            ]
+        ]
+    },
+    {
+        "id": "0dfd1facbdc2544f",
+        "type": "function",
+        "z": "b9580a15940f3cbd",
+        "name": "Generate OAuth Tokens",
+        "func": "const intPath = flow.get('int_path');\nconst intfile = fs.readFileSync(intPath);\nconst integrations = JSON.parse(intfile); \nflow.set('tokens', []);\n\nintegrations.forEach( (x, i) => {\n    msg.org = x.atrius_org;\n    msg.oauth2Request = {\n        access_token_url: 'https://api.buildingos.com/o/token/',\n        credentials: {\n            grant_type: 'client_credentials',\n            client_id: x.atrius_client,\n            client_secret: x.atrius_secret\n        }\n    }    \n    node.send(msg);\n});\nnode.done();",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [
+            {
+                "var": "fs",
+                "module": "fs"
+            },
+            {
+                "var": "path",
+                "module": "path"
+            }
+        ],
+        "x": 350,
+        "y": 320,
+        "wires": [
+            [
+                "ba228cea3125f97e"
+            ]
+        ]
+    },
+    {
+        "id": "827f7ed2db168021",
+        "type": "function",
+        "z": "b9580a15940f3cbd",
+        "name": "Init flow",
+        "func": "try {\n    const projectPath = path.format({\n        dir: '/home/azureuser/atrius-red/solar-edge'\n    });\n    const intPath = path.format({\n        dir: projectPath,\n        name: 'integrations',\n        ext: '.json'\n    }).replace('//', '/');\n\n    flow.set('solaredge_url', \n        'https://monitoringapi.solaredge.com/site/');\n    flow.set('project_path', projectPath);\n    flow.set('int_path', intPath);\n    flow.set('integrations',\n            JSON.parse(fs.readFileSync(intPath)));\n\n} catch (err) {\n    msg.payload = err\n};\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [
+            {
+                "var": "path",
+                "module": "path"
+            },
+            {
+                "var": "fs",
+                "module": "fs"
+            }
+        ],
+        "x": 560,
+        "y": 40,
+        "wires": [
+            [
+                "b5bcba161a1d8ff1"
+            ]
+        ]
+    },
+    {
+        "id": "49156747c51e7f27",
+        "type": "inject",
+        "z": "b9580a15940f3cbd",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 110,
+        "y": 40,
+        "wires": [
+            [
+                "827f7ed2db168021"
+            ]
+        ]
+    },
+    {
+        "id": "9bd5ab353face135",
+        "type": "function",
+        "z": "b9580a15940f3cbd",
+        "name": "Parse Connection List",
+        "func": "try {\n    msg.payload = JSON.parse(fs.readFileSync(\n        flow.get('int_path')\n    ));\n    // flow.set('integrations', msg.payload);\n\n    msg.payload.forEach((x) => {\n        delete x['atrius_client'];\n        delete x['atrius_secret'];\n        delete x['solaredge_key']; \n    });\n} catch (err) {\n    msg.payload = err;\n};\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [
+            {
+                "var": "fs",
+                "module": "fs"
+            }
+        ],
+        "x": 460,
+        "y": 160,
+        "wires": [
+            [
+                "c0fa7895a197f724",
+                "9cf7518ac737d617"
+            ]
+        ]
+    },
+    {
+        "id": "4d3137de10baadf7",
+        "type": "inject",
+        "z": "b9580a15940f3cbd",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "3600",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "true",
+        "payloadType": "bool",
+        "x": 90,
+        "y": 160,
+        "wires": [
+            [
+                "9bd5ab353face135"
+            ]
+        ]
+    },
+    {
+        "id": "9cf7518ac737d617",
+        "type": "debug",
+        "z": "b9580a15940f3cbd",
+        "name": "debug Connection List Query",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 820,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "c0fa7895a197f724",
+        "type": "ui_table",
+        "z": "b9580a15940f3cbd",
+        "group": "7d527df484dee497",
+        "name": "Connections",
+        "order": 1,
+        "width": "6",
+        "height": "4",
+        "columns": [],
+        "outputs": 1,
+        "cts": true,
+        "x": 890,
+        "y": 160,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "036e65125a17cd63",
+        "type": "ui_button",
+        "z": "b9580a15940f3cbd",
+        "name": "",
+        "group": "7d527df484dee497",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "label": "refresh",
+        "tooltip": "refresh the connection list",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "true",
+        "payloadType": "bool",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 80,
+        "y": 200,
+        "wires": [
+            [
+                "9bd5ab353face135"
+            ]
+        ]
+    },
+    {
+        "id": "06111b9b830564a5",
+        "type": "ui_form",
+        "z": "b9580a15940f3cbd",
+        "name": "",
+        "label": "Delete Connection",
+        "group": "7d527df484dee497",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "options": [
+            {
+                "label": "Connection ID",
+                "value": "connection_id",
+                "type": "number",
+                "required": true,
+                "rows": null
+            }
+        ],
+        "formValue": {
+            "connection_id": ""
+        },
+        "payload": "",
+        "submit": "delete",
+        "cancel": "cancel",
+        "topic": "topic",
+        "topicType": "msg",
+        "splitLayout": "",
+        "className": "",
+        "x": 110,
+        "y": 240,
+        "wires": [
+            [
+                "e7c9178e513a4bfe"
+            ]
+        ]
+    },
+    {
+        "id": "e7c9178e513a4bfe",
+        "type": "function",
+        "z": "b9580a15940f3cbd",
+        "name": "Delete Connection",
+        "func": "const  projectPath = flow.get('project_path');\n\ntry {\n    const intPath = flow.get('int_path');\n    fs.readFile(intPath, (err, data) => {\n        if (err) msg.payload.error = err.message;\n        \n        const connections = JSON.parse(data);\n        const conn = msg.payload['connection_id'];\n\n        try {\n            fs.rmdirSync(`${projectPath}/${conn}/`, \n                            { recursive: true, force: true });\n        } catch (e) {\n            if (e) msg.payload.error = e.message;\n        };\n\n        let arr = \n            connections.filter((x) => x.solaredge_site != conn);\n\n        const buff = new Uint8Array(\n            Buffer.from(JSON.stringify(arr)\n        ));\n        fs.writeFile(intPath, buff, (err) => {\n            if (err) {msg.payload.error = err.message;}\n            flow.set('integrations', arr);\n        });\n    });\n} catch (err) {\n    msg.payload.error = err;\n};\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [
+            {
+                "var": "fs",
+                "module": "fs"
+            },
+            {
+                "var": "path",
+                "module": "path"
+            }
+        ],
+        "x": 470,
+        "y": 220,
+        "wires": [
+            [
+                "86eac23e35b1e3c7"
+            ]
+        ]
+    },
+    {
+        "id": "86eac23e35b1e3c7",
+        "type": "debug",
+        "z": "b9580a15940f3cbd",
+        "name": "debug Connection Delete Op",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 820,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "b5bcba161a1d8ff1",
+        "type": "debug",
+        "z": "b9580a15940f3cbd",
+        "name": "debug flow init",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 860,
+        "y": 40,
+        "wires": []
+    },
+    {
+        "id": "100bcf0749c75a3f",
+        "type": "comment",
+        "z": "b9580a15940f3cbd",
+        "name": "Authentication",
+        "info": "",
+        "x": 90,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "1da011f9ebc84aa7",
+        "type": "ui_button",
+        "z": "b9580a15940f3cbd",
+        "name": "",
+        "group": "9184d826bdcaa24a",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "generate",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 80,
+        "y": 360,
+        "wires": [
+            [
+                "0dfd1facbdc2544f"
+            ]
+        ]
+    },
+    {
+        "id": "214885f8463bb034",
+        "type": "ui_table",
+        "z": "b9580a15940f3cbd",
+        "group": "9184d826bdcaa24a",
+        "name": "Token List",
+        "order": 1,
+        "width": "6",
+        "height": "4",
+        "columns": [],
+        "outputs": 1,
+        "cts": true,
+        "x": 900,
+        "y": 320,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "4778c28dcbd9909f",
+        "type": "function",
+        "z": "b9580a15940f3cbd",
+        "name": "Parse-Details",
+        "func": "const  projectPath = flow.get('project_path');\nconst buff = new Uint8Array(Buffer.from(JSON.stringify(msg.payload)));\nconst input = JSON.parse(msg.payload);\nconst siteId = input.details['id'];\n\nfs.writeFile(`${projectPath}/${String(siteId)}/details.json`, buff, (err) => {\n            if (err) msg.payload.error = err.message;\n        });\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [
+            {
+                "var": "fs",
+                "module": "fs"
+            }
+        ],
+        "x": 540,
+        "y": 500,
+        "wires": [
+            [
+                "df91d17bf4e58c76"
+            ]
+        ]
+    },
+    {
+        "id": "df91d17bf4e58c76",
+        "type": "debug",
+        "z": "b9580a15940f3cbd",
+        "name": "debug Parse Details",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 840,
+        "y": 500,
+        "wires": []
+    },
+    {
+        "id": "6487060222466f5d",
+        "type": "debug",
+        "z": "b9580a15940f3cbd",
+        "name": "debug get-details",
+        "active": true,
+        "tosidebar": true,
+        "console": true,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 850,
+        "y": 440,
+        "wires": []
+    },
+    {
+        "id": "3f51c33524f8ad62",
+        "type": "function",
+        "z": "b9580a15940f3cbd",
+        "name": "Get Details",
+        "func": "const url = flow.get('solaredge_url');\nconst connections = flow.get('integrations');\n\nconnections.forEach((x) => {\n    msg = {\n        \"url\": `${url}${x.solaredge_site}/details?api_key=${x.solaredge_key}`,\n            \"method\": \"GET\",\n            \"headers\": {\n                \"content-type\": \"application/json\"\n            },\n            \"payload\": false\n        }\n        node.send(msg);\n});\nnode.done();",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 550,
+        "y": 440,
+        "wires": [
+            [
+                "6487060222466f5d",
+                "97a78624a62c539b"
+            ]
+        ]
+    },
+    {
+        "id": "97a78624a62c539b",
+        "type": "http request",
+        "z": "b9580a15940f3cbd",
+        "name": "",
+        "method": "use",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "",
+        "tls": "37ad74c03ea941d8",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 290,
+        "y": 500,
+        "wires": [
+            [
+                "4778c28dcbd9909f"
+            ]
+        ]
+    },
+    {
+        "id": "31dd65bc048f6f89",
+        "type": "comment",
+        "z": "b9580a15940f3cbd",
+        "name": "Solar Edge API Calls",
+        "info": "",
+        "x": 110,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "6b4a7b261e2a9f7f",
+        "type": "inject",
+        "z": "b9580a15940f3cbd",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": "0.5",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 100,
+        "y": 440,
+        "wires": [
+            [
+                "3f51c33524f8ad62"
+            ]
+        ]
+    },
+    {
+        "id": "f9926054cb35928d",
+        "type": "function",
+        "z": "b9580a15940f3cbd",
+        "name": "Parse Energy Supply",
+        "func": "const projectPath = flow.get('project_path');\nconst msg_url = String(msg.url);\nconst siteId = msg_url.substring(msg_url.search(/\\d{7}/g), \n                                 msg_url.search(/\\d{7}/g) + 7);\nconst parsedUrl = new url.URL(msg_url);\nconst start_date = parsedUrl.searchParams.get('startDate');\nconst end_date = parsedUrl.searchParams.get('endDate');\nconst filename = `${start_date}_${end_date}`;\nconst filepath = `${projectPath}/${siteId}/energy/${filename}.json`;\nconst resp_obj = JSON.parse(msg.payload);\nconst values = resp_obj.energy.values;\nconst value2reading = (v) => {\n    return {\n        'meterId': `${siteId}_energy`,\n        'timestamp': v.date,\n        'value': v.value\n    };\n};\nconst readings = values.map(value2reading);\nconst atrius_msg = {\n    'constructCatalog': false,\n    'constructReadings': false,\n    'meterCatalog': [\n        {\n            'meterId': `${siteId}_energy`,\n            'meterName': 'Energy Use',\n            'meterUnit': 'kilowatt-hours'\n        }\n    ],\n    'readings': readings\n};\nflow.set('energy_latest', filepath);\nconst buff =\n    new Uint8Array(Buffer.from(JSON.stringify(atrius_msg)));\nfs.writeFile(filepath, buff, (err) => {\n    if (err) msg.payload.error = err.message;\n    node.done();\n})\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [
+            {
+                "var": "fs",
+                "module": "fs"
+            },
+            {
+                "var": "url",
+                "module": "url"
+            }
+        ],
+        "x": 520,
+        "y": 620,
+        "wires": [
+            [
+                "298c5f495df81216"
+            ]
+        ]
+    },
+    {
+        "id": "298c5f495df81216",
+        "type": "debug",
+        "z": "b9580a15940f3cbd",
+        "name": "debug Parse Energy Supply",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 820,
+        "y": 620,
+        "wires": []
+    },
+    {
+        "id": "c48878598240b298",
+        "type": "debug",
+        "z": "b9580a15940f3cbd",
+        "name": "debug get-energy-supply",
+        "active": true,
+        "tosidebar": true,
+        "console": true,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 820,
+        "y": 560,
+        "wires": []
+    },
+    {
+        "id": "39206619c97e6f96",
+        "type": "function",
+        "z": "b9580a15940f3cbd",
+        "name": "Get Energy Supply",
+        "func": "const url = flow.get('solaredge_url');\nconst connections = flow.get('integrations');\nconst time_unit = 'QUARTER_OF_AN_HOUR';\nconst day_millis = 48 * 60 * 60 * 1000;\nconst end_date = new Date();\nconst start_date = new Date(end_date.getTime() - day_millis);\nconst start = start_date.toISOString()\n                    .slice(0, start_date.toISOString().indexOf(\"T\"));\nconst end = end_date.toISOString()\n                    .slice(0, end_date.toISOString().indexOf(\"T\"));\n\nconnections.forEach((x) => {\n    msg = {\n        \"url\": `${url}${x.solaredge_site}/energy?timeUnit=${time_unit}&endDate=${end}&startDate=${start}&api_key=${x.solaredge_key}`,\n            \"method\": \"GET\",\n            \"headers\": {\n                \"content-type\": \"application/json\"\n            },\n            \"payload\": false\n        }\n        node.send(msg);\n});\nnode.done();",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 530,
+        "y": 560,
+        "wires": [
+            [
+                "c48878598240b298",
+                "c99f83b067d5b28c"
+            ]
+        ]
+    },
+    {
+        "id": "c99f83b067d5b28c",
+        "type": "http request",
+        "z": "b9580a15940f3cbd",
+        "name": "",
+        "method": "use",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "",
+        "tls": "37ad74c03ea941d8",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 290,
+        "y": 620,
+        "wires": [
+            [
+                "f9926054cb35928d"
+            ]
+        ]
+    },
+    {
+        "id": "30cd969bbdc18dfd",
+        "type": "inject",
+        "z": "b9580a15940f3cbd",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "86400",
+        "crontab": "",
+        "once": false,
+        "onceDelay": "0.5",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 110,
+        "y": 560,
+        "wires": [
+            [
+                "39206619c97e6f96"
+            ]
+        ]
+    },
+    {
+        "id": "259b59301ddd3dc2",
+        "type": "function",
+        "z": "b9580a15940f3cbd",
+        "name": "Parse Available Power",
+        "func": "const projectPath = flow.get('project_path');\nconst msg_url = String(msg.url);\nconst siteId = msg_url.substring(msg_url.search(/\\d{7}/g),\n    msg_url.search(/\\d{7}/g) + 7);\nconst parsedUrl = new url.URL(msg_url);\nconst start_time = parsedUrl.searchParams.get('startTime')\n                                   .replace(' ', '_')\n                                   .replace(/:+/g, '_');\nconst end_time = parsedUrl.searchParams.get('endTime')\n                                 .replace(' ', '_')\n                                 .replace(/:+/g, '_');\nconst filename = `${start_time}_${end_time}`;\nconst filepath = `${projectPath}/${siteId}/power/${filename}.json`;\nconst resp_obj = JSON.parse(msg.payload);\nconst values = resp_obj.power.values;\nconst value2reading = (v) => {\n    return {\n        'meterId': `${siteId}_power`,\n        'timestamp': v.date,\n        'value': v.value\n    };\n};\nconst readings = values.map(value2reading);\nconst atrius_msg = {\n    'constructCatalog': false,\n    'constructReadings': false,\n    'meterCatalog': [\n        {\n            'meterId': `${siteId}_power`,\n            'meterName': 'Power Demand',\n            'meterUnit': 'kilowatt'\n        }\n    ],\n    'readings': readings\n};\nflow.set('power_latest', filepath);\nconst buff =\n    new Uint8Array(Buffer.from(JSON.stringify(atrius_msg)));\nfs.writeFile(filepath, buff, (err) => {\n    if (err) msg.payload.error = err.message;\n    node.done();\n})\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [
+            {
+                "var": "fs",
+                "module": "fs"
+            },
+            {
+                "var": "url",
+                "module": "url"
+            }
+        ],
+        "x": 520,
+        "y": 740,
+        "wires": [
+            [
+                "8d70aa1459599cc6"
+            ]
+        ]
+    },
+    {
+        "id": "8d70aa1459599cc6",
+        "type": "debug",
+        "z": "b9580a15940f3cbd",
+        "name": "debug Parse Available Power",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 820,
+        "y": 740,
+        "wires": []
+    },
+    {
+        "id": "612590a1858915b1",
+        "type": "debug",
+        "z": "b9580a15940f3cbd",
+        "name": "debug Available Power",
+        "active": true,
+        "tosidebar": true,
+        "console": true,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 830,
+        "y": 680,
+        "wires": []
+    },
+    {
+        "id": "e9fc2c6c7869135a",
+        "type": "function",
+        "z": "b9580a15940f3cbd",
+        "name": "Get Available Power",
+        "func": "const url = flow.get('solaredge_url');\nconst connections = flow.get('integrations');\nconst day_millis = 48 * 60 * 60 * 1000;\nconst end_time = new Date();\nconsole.log('end_time_millis ' + end_time.getTime());\nconsole.log('day_millis ' + day_millis);\nconsole.log('delta ' + String(end_time.getTime() - day_millis));\nconst start_time = new Date(end_time.getTime() - day_millis);\nconst start = start_time.toISOString()\n                        .replace(\"T\", \" \")\n                        .slice(0, start_time.toISOString().indexOf(\".\"));\nconst end = end_time.toISOString()\n                    .replace(\"T\", \" \")\n                    .slice(0, end_time.toISOString().indexOf(\".\"));\n\nconnections.forEach((x) => {\n    msg = {\n        \"url\": `${url}${x.solaredge_site}/power?endTime=${end}&startTime=${start}&api_key=${x.solaredge_key}`,\n            \"method\": \"GET\",\n            \"headers\": {\n                \"content-type\": \"application/json\"\n            },\n            \"payload\": false\n        }\n        node.send(msg);\n});\nnode.done();",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 520,
+        "y": 680,
+        "wires": [
+            [
+                "612590a1858915b1",
+                "19adc0ae4c4a1ad8"
+            ]
+        ]
+    },
+    {
+        "id": "19adc0ae4c4a1ad8",
+        "type": "http request",
+        "z": "b9580a15940f3cbd",
+        "name": "",
+        "method": "use",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "",
+        "tls": "37ad74c03ea941d8",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 290,
+        "y": 740,
+        "wires": [
+            [
+                "259b59301ddd3dc2"
+            ]
+        ]
+    },
+    {
+        "id": "c4a0b1ee6b3b21f2",
+        "type": "inject",
+        "z": "b9580a15940f3cbd",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "86400",
+        "crontab": "",
+        "once": false,
+        "onceDelay": "0.5",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 110,
+        "y": 680,
+        "wires": [
+            [
+                "e9fc2c6c7869135a"
+            ]
+        ]
+    },
+    {
+        "id": "38c2814a27ec00cf",
+        "type": "complete",
+        "z": "b9580a15940f3cbd",
+        "name": "",
+        "scope": [
+            "d27965d89d217317"
+        ],
+        "uncaught": false,
+        "x": 350,
+        "y": 420,
+        "wires": [
+            [
+                "3f51c33524f8ad62"
+            ]
+        ]
+    },
+    {
+        "id": "dfdbda1ab973bf5d",
+        "type": "comment",
+        "z": "b9580a15940f3cbd",
+        "name": "Atrius API Calls",
+        "info": "",
+        "x": 100,
+        "y": 780,
+        "wires": []
+    },
+    {
+        "id": "eb5ef57dad705030",
+        "type": "exec",
+        "z": "b9580a15940f3cbd",
+        "command": "/home/azureuser/atrius-red/legacy_push.sh",
+        "addpay": "payload",
+        "append": "",
+        "useSpawn": "false",
+        "timer": "",
+        "winHide": false,
+        "oldrc": false,
+        "name": "Energy JSON Push",
+        "x": 590,
+        "y": 860,
+        "wires": [
+            [
+                "879aa514ade61f6e"
+            ],
+            [
+                "879aa514ade61f6e"
+            ],
+            [
+                "879aa514ade61f6e"
+            ]
+        ]
+    },
+    {
+        "id": "6f266922380b52cf",
+        "type": "complete",
+        "z": "b9580a15940f3cbd",
+        "name": "",
+        "scope": [
+            "f9926054cb35928d"
+        ],
+        "uncaught": false,
+        "x": 90,
+        "y": 820,
+        "wires": [
+            [
+                "cd30be6672ba4488"
+            ]
+        ]
+    },
+    {
+        "id": "28eb89028086ce07",
+        "type": "exec",
+        "z": "b9580a15940f3cbd",
+        "command": "/home/azureuser/atrius-red/legacy_push.sh",
+        "addpay": "payload",
+        "append": "",
+        "useSpawn": "true",
+        "timer": "",
+        "winHide": false,
+        "oldrc": false,
+        "name": "Power JSON Push",
+        "x": 590,
+        "y": 960,
+        "wires": [
+            [
+                "ecf8c23573b465ea"
+            ],
+            [
+                "ecf8c23573b465ea"
+            ],
+            [
+                "ecf8c23573b465ea"
+            ]
+        ]
+    },
+    {
+        "id": "77e468be5101ebf1",
+        "type": "complete",
+        "z": "b9580a15940f3cbd",
+        "name": "",
+        "scope": [
+            "259b59301ddd3dc2"
+        ],
+        "uncaught": false,
+        "x": 90,
+        "y": 920,
+        "wires": [
+            [
+                "fe445d2e5f485594"
+            ]
+        ]
+    },
+    {
+        "id": "879aa514ade61f6e",
+        "type": "debug",
+        "z": "b9580a15940f3cbd",
+        "name": "debug Energy Push",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 850,
+        "y": 860,
+        "wires": []
+    },
+    {
+        "id": "ecf8c23573b465ea",
+        "type": "debug",
+        "z": "b9580a15940f3cbd",
+        "name": "debug Power Push",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 850,
+        "y": 960,
+        "wires": []
+    },
+    {
+        "id": "cd30be6672ba4488",
+        "type": "function",
+        "z": "b9580a15940f3cbd",
+        "name": "Inject Energy Params",
+        "func": "try {\n    const integrations = flow.get('integrations');\n    const tokens = flow.get('tokens');\n    const energyFile = flow.get('energy_latest');\n    \n    integrations.forEach((x) => {\n        const t = tokens.find((t) => t.org == x.atrius_org)\n        const gateway = x.atrius_gateway\n        if (t.token != undefined && \n            gateway != undefined &&\n            energyFile != undefined) {\n            msg.payload = \n                `${String(t.token)} ${gateway} ${energyFile.replace('//', '/')}`\n        }\n    });\n} catch (error) {\n    msg.payload.error = error;\n};\n\nnode.done();\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [
+            {
+                "var": "fs",
+                "module": "fs"
+            }
+        ],
+        "x": 340,
+        "y": 860,
+        "wires": [
+            [
+                "eb5ef57dad705030"
+            ]
+        ]
+    },
+    {
+        "id": "fe445d2e5f485594",
+        "type": "function",
+        "z": "b9580a15940f3cbd",
+        "name": "Inject Power Params",
+        "func": "try {\n    const integrations = flow.get('integrations');\n    const tokens = flow.get('tokens');\n    const powerFile = flow.get('power_latest');\n    \n    integrations.forEach((x) => {\n        const t = tokens.find((t) => t.org == x.atrius_org)\n        const gateway = x.atrius_gateway\n        if (t.token != undefined && \n            gateway != undefined &&\n            powerFile != undefined) {\n            msg.payload = \n                `${String(t.token)} ${gateway} ${powerFile.replace('//', '/')}`\n        }\n    });\n} catch (error) {\n    msg.payload.error = error;\n};\n\nnode.done();\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 340,
+        "y": 960,
+        "wires": [
+            [
+                "28eb89028086ce07"
+            ]
+        ]
+    },
+    {
+        "id": "a5740e7dc9fe615f",
+        "type": "inject",
+        "z": "b9580a15940f3cbd",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 100,
+        "y": 860,
+        "wires": [
+            [
+                "cd30be6672ba4488"
+            ]
+        ]
+    },
+    {
+        "id": "d8ee155a507ff877",
+        "type": "inject",
+        "z": "b9580a15940f3cbd",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 100,
+        "y": 960,
+        "wires": [
+            [
+                "fe445d2e5f485594"
+            ]
+        ]
+    },
+    {
+        "id": "a63e06e23689fd2a",
+        "type": "http request",
+        "z": "532d30b88b501257",
+        "name": "",
+        "method": "use",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "",
+        "tls": "37ad74c03ea941d8",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 430,
+        "y": 180,
+        "wires": [
+            [
+                "2838b91e4c4d29b8"
+            ]
+        ]
+    },
+    {
+        "id": "2838b91e4c4d29b8",
+        "type": "function",
+        "z": "532d30b88b501257",
+        "name": "GetBuilding1",
+        "func": "let resp = JSON.parse(msg.payload);\nlet data = resp.data[0]\nlet token = flow.get(\"token\")\nmsg = { \"url\": data.meters,\n        \"method\": \"GET\",\n        \"headers\": {\n            \"content-type\": \"application/json\",\n            \"authorization\": \"Bearer \"+token\n        },\n        \"payload\": false\n    }\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 670,
+        "y": 180,
+        "wires": [
+            [
+                "7511a078fc85124f",
+                "d16a41fd9c838a27"
+            ]
+        ]
+    },
+    {
+        "id": "7511a078fc85124f",
+        "type": "debug",
+        "z": "532d30b88b501257",
+        "name": "debug GetBuildings",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 890,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "611d5bb593e1b899",
+        "type": "oauth2",
+        "z": "532d30b88b501257",
+        "name": "",
+        "container": "oauth2Response",
+        "grant_type": "client_credentials",
+        "access_token_url": "https://api.buildingos.com/o/token/",
+        "authorization_endpoint": "",
+        "redirect_uri": "/oauth2/redirect_uri",
+        "open_authentication": "",
+        "username": "",
+        "password": "",
+        "client_id": "nftfX2CzyupNmg8FgIPAHBj4PK23xoNdBRdLz01m",
+        "client_secret": "2Ar6BoBo37Tn74rMHM2k01byDZOaREDQXIImNVC7lXOR2WQMvz1jyeIuVIaInU5KwlBNfBb4rM8zStgwURhxyRzMeVcSHeIvoo2IPU2TOL5iD8Yyg4vPIzLwmaHrPwv1",
+        "scope": "",
+        "resource": "",
+        "proxy": "",
+        "senderr": false,
+        "client_credentials_in_body": true,
+        "rejectUnauthorized": true,
+        "headers": {},
+        "x": 310,
+        "y": 40,
+        "wires": [
+            [
+                "71818fb7ed70e6b5"
+            ]
+        ]
+    },
+    {
+        "id": "e11e2cf0c74cd8f3",
+        "type": "inject",
+        "z": "532d30b88b501257",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 100,
+        "y": 40,
+        "wires": [
+            [
+                "611d5bb593e1b899"
+            ]
+        ]
+    },
+    {
+        "id": "7375dc6d35375fa7",
+        "type": "debug",
+        "z": "532d30b88b501257",
+        "name": "debug oauth2",
+        "active": true,
+        "tosidebar": true,
+        "console": true,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 900,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "09e289f4d9110316",
+        "type": "function",
+        "z": "532d30b88b501257",
+        "name": "Pass Request Inputs",
+        "func": "let oauth2 = msg.payload\nlet token = oauth2.access_token\nflow.set(\"token\", token)\nmsg = { \"url\": \"https://api.buildingos.com/buildings/\",\n        \"method\": \"GET\",\n        \"headers\": {\n            \"content-type\": \"application/json\",\n            \"authorization\": \"Bearer \"+token\n        },\n        \"payload\": false\n    }\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 640,
+        "y": 120,
+        "wires": [
+            [
+                "7375dc6d35375fa7",
+                "a63e06e23689fd2a"
+            ]
+        ]
+    },
+    {
+        "id": "d16a41fd9c838a27",
+        "type": "http request",
+        "z": "532d30b88b501257",
+        "name": "",
+        "method": "use",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "",
+        "tls": "37ad74c03ea941d8",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 430,
+        "y": 240,
+        "wires": [
+            [
+                "0caf081194364f1c"
+            ]
+        ]
+    },
+    {
+        "id": "0caf081194364f1c",
+        "type": "function",
+        "z": "532d30b88b501257",
+        "name": "GetMeters",
+        "func": "let resp = JSON.parse(msg.payload);\nlet point = resp.data[0];\nlet token = flow.get(\"token\");\nconst now = new Date().toISOString;\nmsg = { \"url\": \"https://api.buildingos.com/meters/data/?uuid=\"+point.uuid+\"&start=2023-11-07T12:00:00.000Z&end=2023-11-08T20:47:23+00:00&resolution=live\",\n        \"method\": \"GET\",\n        \"headers\": {\n            \"content-type\": \"application/json\",\n            \"authorization\": \"Bearer \"+token\n        },\n        \"payload\": false\n    };\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 670,
+        "y": 240,
+        "wires": [
+            [
+                "57e707d8d13237b3",
+                "1faa4919d1733ab4"
+            ]
+        ]
+    },
+    {
+        "id": "57e707d8d13237b3",
+        "type": "debug",
+        "z": "532d30b88b501257",
+        "name": "debug GetMeters",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 890,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "b49a471275395fe4",
+        "type": "file",
+        "z": "532d30b88b501257",
+        "name": "Token Insert",
+        "filename": "/home/azureuser/atrius-red/token.json",
+        "filenameType": "str",
+        "appendNewline": false,
+        "createDir": false,
+        "overwriteFile": "true",
+        "encoding": "utf8",
+        "x": 670,
+        "y": 40,
+        "wires": [
+            [
+                "646aa3523298be9e"
+            ]
+        ]
+    },
+    {
+        "id": "646aa3523298be9e",
+        "type": "debug",
+        "z": "532d30b88b501257",
+        "name": "debug Token Insert",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 890,
+        "y": 40,
+        "wires": []
+    },
+    {
+        "id": "71818fb7ed70e6b5",
+        "type": "function",
+        "z": "532d30b88b501257",
+        "name": "Parse Token",
+        "func": "msg.payload = msg.oauth2Response\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 470,
+        "y": 40,
+        "wires": [
+            [
+                "b49a471275395fe4"
+            ]
+        ]
+    },
+    {
+        "id": "8eee679515e32b29",
+        "type": "file in",
+        "z": "532d30b88b501257",
+        "name": "Retrieve Token",
+        "filename": "/home/azureuser/atrius-red/token.json",
+        "filenameType": "str",
+        "format": "utf8",
+        "chunk": false,
+        "sendError": false,
+        "encoding": "none",
+        "allProps": false,
+        "x": 280,
+        "y": 120,
+        "wires": [
+            [
+                "36b79d5904a9dc96"
+            ]
+        ]
+    },
+    {
+        "id": "645ee7404afc54d1",
+        "type": "inject",
+        "z": "532d30b88b501257",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 100,
+        "y": 120,
+        "wires": [
+            [
+                "8eee679515e32b29"
+            ]
+        ]
+    },
+    {
+        "id": "36b79d5904a9dc96",
+        "type": "json",
+        "z": "532d30b88b501257",
+        "name": "",
+        "property": "payload",
+        "action": "obj",
+        "pretty": false,
+        "x": 450,
+        "y": 120,
+        "wires": [
+            [
+                "09e289f4d9110316"
+            ]
+        ]
+    },
+    {
+        "id": "1faa4919d1733ab4",
+        "type": "http request",
+        "z": "532d30b88b501257",
+        "name": "",
+        "method": "use",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "",
+        "tls": "37ad74c03ea941d8",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 430,
+        "y": 300,
+        "wires": [
+            [
+                "2516747f3bc49f58"
+            ]
+        ]
+    },
+    {
+        "id": "2516747f3bc49f58",
+        "type": "function",
+        "z": "532d30b88b501257",
+        "name": "GetMeterData",
+        "func": "return msg",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 660,
+        "y": 300,
+        "wires": [
+            [
+                "671f0b140f20b76e",
+                "49c2dc671d19f819"
+            ]
+        ]
+    },
+    {
+        "id": "671f0b140f20b76e",
+        "type": "debug",
+        "z": "532d30b88b501257",
+        "name": "debug GetMeterData",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 880,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "49c2dc671d19f819",
+        "type": "file",
+        "z": "532d30b88b501257",
+        "name": "Room Temp 2 File",
+        "filename": "/home/azureuser/atrius-red/room_temp.json",
+        "filenameType": "str",
+        "appendNewline": false,
+        "createDir": false,
+        "overwriteFile": "true",
+        "encoding": "none",
+        "x": 910,
+        "y": 360,
+        "wires": [
+            []
+        ]
+    }
+]
