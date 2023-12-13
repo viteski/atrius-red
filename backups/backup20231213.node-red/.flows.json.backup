@@ -395,7 +395,7 @@
             }
         ],
         "x": 480,
-        "y": 120,
+        "y": 160,
         "wires": [
             [
                 "8d26387fc4043c3e"
@@ -416,7 +416,7 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 830,
-        "y": 120,
+        "y": 160,
         "wires": []
     },
     {
@@ -442,7 +442,7 @@
         "rejectUnauthorized": true,
         "headers": {},
         "x": 550,
-        "y": 320,
+        "y": 360,
         "wires": [
             [
                 "726fb0887a3f5835"
@@ -467,7 +467,7 @@
         "payload": "",
         "payloadType": "date",
         "x": 110,
-        "y": 320,
+        "y": 360,
         "wires": [
             [
                 "0dfd1facbdc2544f"
@@ -488,7 +488,7 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 840,
-        "y": 380,
+        "y": 420,
         "wires": []
     },
     {
@@ -504,7 +504,7 @@
         "finalize": "",
         "libs": [],
         "x": 720,
-        "y": 320,
+        "y": 360,
         "wires": [
             [
                 "63aa5490f50178a9",
@@ -519,7 +519,7 @@
         "name": "Integration Configuration",
         "info": "",
         "x": 130,
-        "y": 80,
+        "y": 120,
         "wires": []
     },
     {
@@ -592,7 +592,7 @@
         "splitLayout": "",
         "className": "",
         "x": 120,
-        "y": 120,
+        "y": 160,
         "wires": [
             [
                 "d27965d89d217317"
@@ -621,7 +621,7 @@
             }
         ],
         "x": 350,
-        "y": 320,
+        "y": 360,
         "wires": [
             [
                 "ba228cea3125f97e"
@@ -650,7 +650,7 @@
             }
         ],
         "x": 560,
-        "y": 40,
+        "y": 80,
         "wires": [
             [
                 "b5bcba161a1d8ff1"
@@ -679,7 +679,7 @@
         "payload": "",
         "payloadType": "date",
         "x": 110,
-        "y": 40,
+        "y": 80,
         "wires": [
             [
                 "827f7ed2db168021"
@@ -704,7 +704,7 @@
             }
         ],
         "x": 460,
-        "y": 160,
+        "y": 200,
         "wires": [
             [
                 "c0fa7895a197f724",
@@ -734,7 +734,7 @@
         "payload": "true",
         "payloadType": "bool",
         "x": 90,
-        "y": 160,
+        "y": 200,
         "wires": [
             [
                 "9bd5ab353face135"
@@ -755,7 +755,7 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 820,
-        "y": 200,
+        "y": 240,
         "wires": []
     },
     {
@@ -771,7 +771,7 @@
         "outputs": 1,
         "cts": true,
         "x": 890,
-        "y": 160,
+        "y": 200,
         "wires": [
             []
         ]
@@ -797,7 +797,7 @@
         "topic": "topic",
         "topicType": "msg",
         "x": 80,
-        "y": 200,
+        "y": 240,
         "wires": [
             [
                 "9bd5ab353face135"
@@ -834,7 +834,7 @@
         "splitLayout": "",
         "className": "",
         "x": 110,
-        "y": 240,
+        "y": 280,
         "wires": [
             [
                 "e7c9178e513a4bfe"
@@ -863,7 +863,7 @@
             }
         ],
         "x": 470,
-        "y": 220,
+        "y": 260,
         "wires": [
             [
                 "86eac23e35b1e3c7"
@@ -884,7 +884,7 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 820,
-        "y": 240,
+        "y": 280,
         "wires": []
     },
     {
@@ -901,7 +901,7 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 860,
-        "y": 40,
+        "y": 80,
         "wires": []
     },
     {
@@ -911,7 +911,7 @@
         "name": "Authentication",
         "info": "",
         "x": 90,
-        "y": 280,
+        "y": 320,
         "wires": []
     },
     {
@@ -935,7 +935,7 @@
         "topic": "topic",
         "topicType": "msg",
         "x": 80,
-        "y": 360,
+        "y": 400,
         "wires": [
             [
                 "0dfd1facbdc2544f"
@@ -955,7 +955,7 @@
         "outputs": 1,
         "cts": true,
         "x": 900,
-        "y": 320,
+        "y": 360,
         "wires": [
             []
         ]
@@ -977,8 +977,8 @@
                 "module": "fs"
             }
         ],
-        "x": 540,
-        "y": 500,
+        "x": 580,
+        "y": 540,
         "wires": [
             [
                 "df91d17bf4e58c76"
@@ -999,7 +999,7 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 840,
-        "y": 500,
+        "y": 540,
         "wires": []
     },
     {
@@ -1016,7 +1016,7 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 850,
-        "y": 440,
+        "y": 480,
         "wires": []
     },
     {
@@ -1031,8 +1031,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 550,
-        "y": 440,
+        "x": 590,
+        "y": 480,
         "wires": [
             [
                 "6487060222466f5d",
@@ -1056,8 +1056,8 @@
         "authType": "",
         "senderr": false,
         "headers": [],
-        "x": 290,
-        "y": 500,
+        "x": 370,
+        "y": 540,
         "wires": [
             [
                 "4778c28dcbd9909f"
@@ -1071,7 +1071,7 @@
         "name": "Solar Edge API Calls",
         "info": "",
         "x": 110,
-        "y": 400,
+        "y": 440,
         "wires": []
     },
     {
@@ -1092,7 +1092,7 @@
         "payload": "",
         "payloadType": "date",
         "x": 100,
-        "y": 440,
+        "y": 480,
         "wires": [
             [
                 "3f51c33524f8ad62"
@@ -1120,8 +1120,8 @@
                 "module": "url"
             }
         ],
-        "x": 520,
-        "y": 620,
+        "x": 560,
+        "y": 660,
         "wires": [
             [
                 "298c5f495df81216"
@@ -1142,7 +1142,7 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 820,
-        "y": 620,
+        "y": 660,
         "wires": []
     },
     {
@@ -1159,7 +1159,7 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 820,
-        "y": 560,
+        "y": 600,
         "wires": []
     },
     {
@@ -1174,8 +1174,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 530,
-        "y": 560,
+        "x": 570,
+        "y": 600,
         "wires": [
             [
                 "c48878598240b298",
@@ -1199,8 +1199,8 @@
         "authType": "",
         "senderr": false,
         "headers": [],
-        "x": 290,
-        "y": 620,
+        "x": 350,
+        "y": 660,
         "wires": [
             [
                 "f9926054cb35928d"
@@ -1217,7 +1217,7 @@
                 "p": "payload"
             }
         ],
-        "repeat": "86400",
+        "repeat": "14400",
         "crontab": "",
         "once": false,
         "onceDelay": "0.5",
@@ -1225,7 +1225,7 @@
         "payload": "",
         "payloadType": "date",
         "x": 110,
-        "y": 560,
+        "y": 600,
         "wires": [
             [
                 "39206619c97e6f96"
@@ -1253,8 +1253,8 @@
                 "module": "url"
             }
         ],
-        "x": 520,
-        "y": 740,
+        "x": 560,
+        "y": 780,
         "wires": [
             [
                 "8d70aa1459599cc6"
@@ -1275,7 +1275,7 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 820,
-        "y": 740,
+        "y": 780,
         "wires": []
     },
     {
@@ -1292,7 +1292,7 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 830,
-        "y": 680,
+        "y": 720,
         "wires": []
     },
     {
@@ -1307,8 +1307,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 520,
-        "y": 680,
+        "x": 560,
+        "y": 720,
         "wires": [
             [
                 "612590a1858915b1",
@@ -1332,8 +1332,8 @@
         "authType": "",
         "senderr": false,
         "headers": [],
-        "x": 290,
-        "y": 740,
+        "x": 350,
+        "y": 780,
         "wires": [
             [
                 "259b59301ddd3dc2"
@@ -1350,7 +1350,7 @@
                 "p": "payload"
             }
         ],
-        "repeat": "86400",
+        "repeat": "14400",
         "crontab": "",
         "once": false,
         "onceDelay": "0.5",
@@ -1358,7 +1358,7 @@
         "payload": "",
         "payloadType": "date",
         "x": 110,
-        "y": 680,
+        "y": 720,
         "wires": [
             [
                 "e9fc2c6c7869135a"
@@ -1374,8 +1374,8 @@
             "d27965d89d217317"
         ],
         "uncaught": false,
-        "x": 350,
-        "y": 420,
+        "x": 390,
+        "y": 460,
         "wires": [
             [
                 "3f51c33524f8ad62"
@@ -1389,7 +1389,7 @@
         "name": "Atrius API Calls",
         "info": "",
         "x": 100,
-        "y": 780,
+        "y": 820,
         "wires": []
     },
     {
@@ -1405,7 +1405,7 @@
         "oldrc": false,
         "name": "Energy JSON Push",
         "x": 590,
-        "y": 860,
+        "y": 900,
         "wires": [
             [
                 "879aa514ade61f6e"
@@ -1428,7 +1428,7 @@
         ],
         "uncaught": false,
         "x": 90,
-        "y": 820,
+        "y": 860,
         "wires": [
             [
                 "cd30be6672ba4488"
@@ -1448,7 +1448,7 @@
         "oldrc": false,
         "name": "Power JSON Push",
         "x": 590,
-        "y": 960,
+        "y": 1000,
         "wires": [
             [
                 "ecf8c23573b465ea"
@@ -1471,7 +1471,7 @@
         ],
         "uncaught": false,
         "x": 90,
-        "y": 920,
+        "y": 960,
         "wires": [
             [
                 "fe445d2e5f485594"
@@ -1492,7 +1492,7 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 850,
-        "y": 860,
+        "y": 900,
         "wires": []
     },
     {
@@ -1509,7 +1509,7 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 850,
-        "y": 960,
+        "y": 1000,
         "wires": []
     },
     {
@@ -1530,7 +1530,7 @@
             }
         ],
         "x": 340,
-        "y": 860,
+        "y": 900,
         "wires": [
             [
                 "eb5ef57dad705030"
@@ -1550,7 +1550,7 @@
         "finalize": "",
         "libs": [],
         "x": 340,
-        "y": 960,
+        "y": 1000,
         "wires": [
             [
                 "28eb89028086ce07"
@@ -1579,7 +1579,7 @@
         "payload": "",
         "payloadType": "date",
         "x": 100,
-        "y": 860,
+        "y": 900,
         "wires": [
             [
                 "cd30be6672ba4488"
@@ -1608,10 +1608,66 @@
         "payload": "",
         "payloadType": "date",
         "x": 100,
-        "y": 960,
+        "y": 1000,
         "wires": [
             [
                 "fe445d2e5f485594"
+            ]
+        ]
+    },
+    {
+        "id": "90358cdf692499c6",
+        "type": "ui_button",
+        "z": "b9580a15940f3cbd",
+        "name": "",
+        "group": "9184d826bdcaa24a",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Collect Power",
+        "tooltip": "send and on-demand request for power data to the Solar Edge API",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 100,
+        "y": 760,
+        "wires": [
+            [
+                "e9fc2c6c7869135a"
+            ]
+        ]
+    },
+    {
+        "id": "d1240517e459fe90",
+        "type": "ui_button",
+        "z": "b9580a15940f3cbd",
+        "name": "",
+        "group": "9184d826bdcaa24a",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Collect Energy",
+        "tooltip": "send and on-demand request for power data to the Solar Edge API",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 100,
+        "y": 640,
+        "wires": [
+            [
+                "39206619c97e6f96"
             ]
         ]
     },

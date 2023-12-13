@@ -1057,5 +1057,54 @@
                 "file": "/usr/local/lib/node_modules/node-red-node-ui-table/node.js"
             }
         }
+    },
+    "node-red-contrib-azure-ad-auth": {
+        "name": "node-red-contrib-azure-ad-auth",
+        "version": "3.1.25",
+        "local": false,
+        "user": false,
+        "nodes": {
+            "azure-auth": {
+                "name": "azure-auth",
+                "types": [
+                    "azure-ad-auth"
+                ],
+                "enabled": true,
+                "local": false,
+                "user": false,
+                "module": "node-red-contrib-azure-ad-auth",
+                "file": "/usr/local/lib/node_modules/node-red-contrib-azure-ad-auth/azure-auth/azure-ad-auth.js"
+            },
+            "azure-config": {
+                "name": "azure-config",
+                "types": [
+                    "azure-config"
+                ],
+                "enabled": true,
+                "local": false,
+                "user": false,
+                "module": "node-red-contrib-azure-ad-auth",
+                "file": "/usr/local/lib/node_modules/node-red-contrib-azure-ad-auth/config/azure-config.js"
+            }
+        }
+    },
+    "node-red-contrib-azure-ad-login": {
+        "name": "node-red-contrib-azure-ad-login",
+        "version": "0.2.5",
+        "local": false,
+        "user": false,
+        "nodes": {
+            "azure-auth": {
+                "name": "azure-auth",
+                "types": [
+                    "http-in-azure-ad-auth"
+                ],
+                "enabled": false,
+                "local": false,
+                "user": false,
+                "module": "node-red-contrib-azure-ad-login",
+                "file": "/usr/local/lib/node_modules/node-red-contrib-azure-ad-login/azure-auth/http-in-ad-auth.js"
+            }
+        }
     }
 }

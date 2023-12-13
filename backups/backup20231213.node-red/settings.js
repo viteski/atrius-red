@@ -73,14 +73,32 @@ module.exports = {
     /** To password protect the Node-RED editor and admin API, the following
      * property can be used. See https://nodered.org/docs/security.html for details.
      */
-    adminAuth: {
-        type: "credentials",
-        users: [{
-            username: "isg",
-            password: "$2b$08$LI225GOPl0K5lCe9YpSsguEWrQp6ERnxMyExgw5T7jcaTGro7Gq3a",
-            permissions: "*"
-        }]
-    },
+    adminAuth: require("node-red-contrib-auth-azuread")({
+		identityMetadata: 'https://login.microsoftonline.com/caadbe96-024e-4f67-82ec-fb28ff53d16d/v2.0/.well-known/openid-configuration',
+		clientID: 'cdb916d5-0110-4b0e-89f9-7d9f1c62c3ac',
+		clientSecret: '_6x8Q~-U4VDHumFjJ3SHkBwGW.t2sOLyIRYA4ajB',
+		responseType: 'code',
+		responseMode: 'query',
+		redirectUrl: 'https://atrius.eastus.cloudapp.azure.com/auth/strategy/callback',
+		users: [
+			{username: "vms03@acuitysso.com",permissions: ["*"]},
+		]
+	}),
+    //adminAuth: {
+        //type: "credentials",
+        //users: [
+          //{
+            //username: "isg",
+            //password: "$2b$08$LI225GOPl0K5lCe9YpSsguEWrQp6ERnxMyExgw5T7jcaTGro7Gq3a",
+            //permissions: "read"
+          //},
+          //{
+            //username: "ie",
+            //password: "$2b$08$SXt6k9gMFGL7zKWX.PCRI..v2t.YEyYnM3jnkv2PjLCGl8UIB1eE.",
+            //permissions: "*"
+          //}
+        //]
+    //},
 
     /** The following property can be used to enable HTTPS
      * This property can be either an object, containing both a (private) key
@@ -90,9 +108,14 @@ module.exports = {
      */
 
     /** Option 1: static object */
+    //https: {
+    //  key: require("fs").readFileSync('/var/lib/atrius-red/privkey.pem'),
+    //  cert: require("fs").readFileSync('/var/lib/atrius-red/nodered-cert.pem')
+    //},
+
     https: {
-      key: require("fs").readFileSync('/var/lib/atrius-red/privkey.pem'),
-      cert: require("fs").readFileSync('/var/lib/atrius-red/nodered-cert.pem')
+      pfx: require("fs").readFileSync('/var/lib/atrius-red/atrius_integrations.pfx'),
+      passphrase: 'linvic2024'
     },
 
     /** Option 2: function that returns the HTTP configuration object */
@@ -122,8 +145,8 @@ module.exports = {
      * The `pass` field is a bcrypt hash of the password.
      * See https://nodered.org/docs/security.html#generating-the-password-hash
      */
-    //httpNodeAuth: {user:"user",pass:"$2a$08$zZWtXTja0fB1pzD4sHCMyOCMYz2Z6dNbM6tl8sJogENOMcxWV9DN."},
-    //httpStaticAuth: {user:"user",pass:"$2a$08$zZWtXTja0fB1pzD4sHCMyOCMYz2Z6dNbM6tl8sJogENOMcxWV9DN."},
+    httpNodeAuth: {user:"atrius",pass:"$2b$08$1sybUCGSLhB8rnteieDeT.2uf2TzLLaE77RMUPP8w52TnMEx0tHZ."},
+    httpStaticAuth: {user:"atrius",pass:"$2b$08$1sybUCGSLhB8rnteieDeT.2uf2TzLLaE77RMUPP8w52TnMEx0tHZ."},
 
 /*******************************************************************************
  * Server Settings
@@ -141,7 +164,7 @@ module.exports = {
  ******************************************************************************/
 
     /** the tcp port that the Node-RED web server is listening on */
-    uiPort: process.env.PORT || 1880,
+    uiPort: process.env.PORT || 443,
 
     /** By default, the Node-RED UI accepts connections on all IPv4 interfaces.
      * To listen on all IPv6 addresses, set uiHost to "::",

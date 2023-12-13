@@ -442,7 +442,7 @@
         "rejectUnauthorized": true,
         "headers": {},
         "x": 550,
-        "y": 400,
+        "y": 360,
         "wires": [
             [
                 "726fb0887a3f5835"
@@ -467,7 +467,7 @@
         "payload": "",
         "payloadType": "date",
         "x": 110,
-        "y": 400,
+        "y": 360,
         "wires": [
             [
                 "0dfd1facbdc2544f"
@@ -488,7 +488,7 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 840,
-        "y": 460,
+        "y": 420,
         "wires": []
     },
     {
@@ -504,7 +504,7 @@
         "finalize": "",
         "libs": [],
         "x": 720,
-        "y": 400,
+        "y": 360,
         "wires": [
             [
                 "63aa5490f50178a9",
@@ -621,7 +621,7 @@
             }
         ],
         "x": 350,
-        "y": 400,
+        "y": 360,
         "wires": [
             [
                 "ba228cea3125f97e"
@@ -650,7 +650,7 @@
             }
         ],
         "x": 560,
-        "y": 40,
+        "y": 80,
         "wires": [
             [
                 "b5bcba161a1d8ff1"
@@ -679,7 +679,7 @@
         "payload": "",
         "payloadType": "date",
         "x": 110,
-        "y": 40,
+        "y": 80,
         "wires": [
             [
                 "827f7ed2db168021"
@@ -901,7 +901,7 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 860,
-        "y": 40,
+        "y": 80,
         "wires": []
     },
     {
@@ -911,7 +911,7 @@
         "name": "Authentication",
         "info": "",
         "x": 90,
-        "y": 360,
+        "y": 320,
         "wires": []
     },
     {
@@ -935,7 +935,7 @@
         "topic": "topic",
         "topicType": "msg",
         "x": 80,
-        "y": 440,
+        "y": 400,
         "wires": [
             [
                 "0dfd1facbdc2544f"
@@ -955,7 +955,7 @@
         "outputs": 1,
         "cts": true,
         "x": 900,
-        "y": 400,
+        "y": 360,
         "wires": [
             []
         ]
@@ -977,8 +977,8 @@
                 "module": "fs"
             }
         ],
-        "x": 540,
-        "y": 620,
+        "x": 580,
+        "y": 540,
         "wires": [
             [
                 "df91d17bf4e58c76"
@@ -999,7 +999,7 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 840,
-        "y": 620,
+        "y": 540,
         "wires": []
     },
     {
@@ -1016,7 +1016,7 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 850,
-        "y": 560,
+        "y": 480,
         "wires": []
     },
     {
@@ -1031,8 +1031,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 550,
-        "y": 560,
+        "x": 590,
+        "y": 480,
         "wires": [
             [
                 "6487060222466f5d",
@@ -1056,8 +1056,8 @@
         "authType": "",
         "senderr": false,
         "headers": [],
-        "x": 290,
-        "y": 620,
+        "x": 370,
+        "y": 540,
         "wires": [
             [
                 "4778c28dcbd9909f"
@@ -1071,7 +1071,7 @@
         "name": "Solar Edge API Calls",
         "info": "",
         "x": 110,
-        "y": 520,
+        "y": 440,
         "wires": []
     },
     {
@@ -1092,7 +1092,7 @@
         "payload": "",
         "payloadType": "date",
         "x": 100,
-        "y": 560,
+        "y": 480,
         "wires": [
             [
                 "3f51c33524f8ad62"
@@ -1104,7 +1104,7 @@
         "type": "function",
         "z": "b9580a15940f3cbd",
         "name": "Parse Energy Supply",
-        "func": "const projectPath = flow.get('project_path');\nconst msg_url = String(msg.url);\nconst siteId = msg_url.substring(msg_url.search(/\\d{7}/g), \n                                 msg_url.search(/\\d{7}/g) + 7);\nconst parsedUrl = new url.URL(msg_url);\nconst start_date = parsedUrl.searchParams.get('startDate');\nconst end_date = parsedUrl.searchParams.get('endDate');\nconst filename = `${start_date}_${end_date}`;\nconst filepath = `${projectPath}/${siteId}/energy/${filename}.json`;\nconst resp_obj = JSON.parse(msg.payload);\nconst values = resp_obj.energy.values;\nconst value2reading = (v) => {\n    return {\n        'meterId': `${siteId}_energy`,\n        'timestamp': v.date,\n        'value': v.value\n    };\n};\nconst readings = values.map(value2reading);\nconst atrius_msg = {\n    'constructCatalog': false,\n    'constructReadings': false,\n    'meterCatalog': [\n        {\n            'meterId': `${siteId}_energy`,\n            'meterName': 'Energy Use',\n            'meterUnit': 'kilowatt-hours'\n        }\n    ],\n    'readings': readings\n};\nflow.set('energy_latest', filepath);\nconst buff =\n    new Uint8Array(Buffer.from(JSON.stringify(atrius_msg)));\nfs.writeFile(filepath, buff, (err) => {\n    if (err) msg.payload.error = err.message;\n    node.done();\n})\nreturn msg;",
+        "func": "const projectPath = flow.get('project_path');\nconst msg_url = String(msg.url);\nconst siteId = msg_url.substring(msg_url.search(/\\d{7}/g), \n                                 msg_url.search(/\\d{7}/g) + 7);\nmsg.msg_url = msg_url;\nmsg.siteId = siteId;\n\nconst parsedUrl = new url.URL(msg_url);\nconst start_date = parsedUrl.searchParams.get('startDate');\nconst end_date = parsedUrl.searchParams.get('endDate');\nconst filename = `${start_date}_${end_date}`;\nconst filepath = `${projectPath}/${siteId}/energy/${filename}.json`;\nconst resp_obj = JSON.parse(msg.payload);\nconst values = resp_obj.energy.values;\nconst value2reading = (v) => {\n    return {\n        'meterId': `${siteId}_energy`,\n        'timestamp': v.date,\n        'value': v.value\n    };\n};\nconst readings = values.map(value2reading);\nconst atrius_msg = {\n    'constructCatalog': false,\n    'constructReadings': false,\n    'meterCatalog': [\n        {\n            'meterId': `${siteId}_energy`,\n            'meterName': 'Energy Use',\n            'meterUnit': 'kilowatt-hours'\n        }\n    ],\n    'readings': readings\n};\nflow.set('energy_latest', filepath);\nconst buff =\n    new Uint8Array(Buffer.from(JSON.stringify(atrius_msg)));\nfs.writeFile(filepath, buff, (err) => {\n    if (err) msg.payload.error = err.message;\n    node.done();\n})\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -1120,8 +1120,8 @@
                 "module": "url"
             }
         ],
-        "x": 520,
-        "y": 740,
+        "x": 560,
+        "y": 660,
         "wires": [
             [
                 "298c5f495df81216"
@@ -1142,7 +1142,7 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 820,
-        "y": 740,
+        "y": 660,
         "wires": []
     },
     {
@@ -1159,7 +1159,7 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 820,
-        "y": 680,
+        "y": 600,
         "wires": []
     },
     {
@@ -1174,8 +1174,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 530,
-        "y": 680,
+        "x": 570,
+        "y": 600,
         "wires": [
             [
                 "c48878598240b298",
@@ -1199,8 +1199,8 @@
         "authType": "",
         "senderr": false,
         "headers": [],
-        "x": 290,
-        "y": 740,
+        "x": 350,
+        "y": 660,
         "wires": [
             [
                 "f9926054cb35928d"
@@ -1217,7 +1217,7 @@
                 "p": "payload"
             }
         ],
-        "repeat": "86400",
+        "repeat": "14400",
         "crontab": "",
         "once": false,
         "onceDelay": "0.5",
@@ -1225,7 +1225,7 @@
         "payload": "",
         "payloadType": "date",
         "x": 110,
-        "y": 680,
+        "y": 600,
         "wires": [
             [
                 "39206619c97e6f96"
@@ -1253,8 +1253,8 @@
                 "module": "url"
             }
         ],
-        "x": 520,
-        "y": 860,
+        "x": 560,
+        "y": 780,
         "wires": [
             [
                 "8d70aa1459599cc6"
@@ -1275,7 +1275,7 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 820,
-        "y": 860,
+        "y": 780,
         "wires": []
     },
     {
@@ -1292,7 +1292,7 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 830,
-        "y": 800,
+        "y": 720,
         "wires": []
     },
     {
@@ -1307,8 +1307,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 520,
-        "y": 800,
+        "x": 560,
+        "y": 720,
         "wires": [
             [
                 "612590a1858915b1",
@@ -1332,8 +1332,8 @@
         "authType": "",
         "senderr": false,
         "headers": [],
-        "x": 290,
-        "y": 860,
+        "x": 350,
+        "y": 780,
         "wires": [
             [
                 "259b59301ddd3dc2"
@@ -1350,7 +1350,7 @@
                 "p": "payload"
             }
         ],
-        "repeat": "86400",
+        "repeat": "14400",
         "crontab": "",
         "once": false,
         "onceDelay": "0.5",
@@ -1358,7 +1358,7 @@
         "payload": "",
         "payloadType": "date",
         "x": 110,
-        "y": 800,
+        "y": 720,
         "wires": [
             [
                 "e9fc2c6c7869135a"
@@ -1374,8 +1374,8 @@
             "d27965d89d217317"
         ],
         "uncaught": false,
-        "x": 350,
-        "y": 540,
+        "x": 390,
+        "y": 460,
         "wires": [
             [
                 "3f51c33524f8ad62"
@@ -1389,7 +1389,7 @@
         "name": "Atrius API Calls",
         "info": "",
         "x": 100,
-        "y": 940,
+        "y": 820,
         "wires": []
     },
     {
@@ -1405,7 +1405,7 @@
         "oldrc": false,
         "name": "Energy JSON Push",
         "x": 590,
-        "y": 1020,
+        "y": 900,
         "wires": [
             [
                 "879aa514ade61f6e"
@@ -1428,7 +1428,7 @@
         ],
         "uncaught": false,
         "x": 90,
-        "y": 980,
+        "y": 860,
         "wires": [
             [
                 "cd30be6672ba4488"
@@ -1448,7 +1448,7 @@
         "oldrc": false,
         "name": "Power JSON Push",
         "x": 590,
-        "y": 1120,
+        "y": 1000,
         "wires": [
             [
                 "ecf8c23573b465ea"
@@ -1471,7 +1471,7 @@
         ],
         "uncaught": false,
         "x": 90,
-        "y": 1080,
+        "y": 960,
         "wires": [
             [
                 "fe445d2e5f485594"
@@ -1492,7 +1492,7 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 850,
-        "y": 1020,
+        "y": 900,
         "wires": []
     },
     {
@@ -1509,7 +1509,7 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 850,
-        "y": 1120,
+        "y": 1000,
         "wires": []
     },
     {
@@ -1530,7 +1530,7 @@
             }
         ],
         "x": 340,
-        "y": 1020,
+        "y": 900,
         "wires": [
             [
                 "eb5ef57dad705030"
@@ -1550,7 +1550,7 @@
         "finalize": "",
         "libs": [],
         "x": 340,
-        "y": 1120,
+        "y": 1000,
         "wires": [
             [
                 "28eb89028086ce07"
@@ -1579,7 +1579,7 @@
         "payload": "",
         "payloadType": "date",
         "x": 100,
-        "y": 1020,
+        "y": 900,
         "wires": [
             [
                 "cd30be6672ba4488"
@@ -1608,10 +1608,66 @@
         "payload": "",
         "payloadType": "date",
         "x": 100,
-        "y": 1120,
+        "y": 1000,
         "wires": [
             [
                 "fe445d2e5f485594"
+            ]
+        ]
+    },
+    {
+        "id": "90358cdf692499c6",
+        "type": "ui_button",
+        "z": "b9580a15940f3cbd",
+        "name": "",
+        "group": "9184d826bdcaa24a",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Collect Power",
+        "tooltip": "send and on-demand request for power data to the Solar Edge API",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 100,
+        "y": 760,
+        "wires": [
+            [
+                "e9fc2c6c7869135a"
+            ]
+        ]
+    },
+    {
+        "id": "d1240517e459fe90",
+        "type": "ui_button",
+        "z": "b9580a15940f3cbd",
+        "name": "",
+        "group": "9184d826bdcaa24a",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Collect Energy",
+        "tooltip": "send and on-demand request for power data to the Solar Edge API",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 100,
+        "y": 640,
+        "wires": [
+            [
+                "39206619c97e6f96"
             ]
         ]
     },

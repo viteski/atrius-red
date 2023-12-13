@@ -1,0 +1,8 @@
+{
+    "settings": {
+        "spec": "settings",
+        "module": "settings",
+        "builtin": false,
+        "known": false
+    }
+}

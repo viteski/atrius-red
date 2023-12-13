@@ -1,0 +1,19 @@
+[Unit]
+Description=Node-Red based web service to deploy and manage 3rd party integrations from.
+After=syslog.target network.target
+StartLimitIntervalSec=0
+
+[Service]
+Restart=on-failure
+RestartSec=5
+User=root
+Group=root
+ExecStart=/usr/local/bin/node-red --settings /home/azureuser/.node-red/settings.js --userDir /home/azureuser/.node-red --title AtriusRed
+WorkingDirectory=/home/azureuser/.node-red
+Nice=10
+StandardOutput=syslog
+SyslogIdentifier=Atrius-Red
+KillSignal=SIGINT
+
+[Install]
+WantedBy=multi-user.target

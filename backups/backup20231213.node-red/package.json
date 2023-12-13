@@ -4,6 +4,8 @@
     "version": "0.0.1",
     "private": true,
     "dependencies": {
-        "node-red-contrib-oauth2": "^5.2.6"
+        "node-red-contrib-auth-azuread": "^0.1.1",
+        "node-red-contrib-oauth2": "^5.2.6",
+        "settings": "^0.1.1"
     }
 }
